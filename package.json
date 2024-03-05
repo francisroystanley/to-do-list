@@ -1,0 +1,28 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --ignore client/ -e ts --exec npm start",
+    "postinstall": "cd client && npm i",
+    "prestart": "tsc",
+    "start": "node ."
+  },
+  "author": "Francis Roy Stanley Falcon",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.10.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/multer": "^1.4.7",
+    "nodemon": "^3.0.1",
+    "prisma": "^5.10.2",
+    "ts-node": "^10.9.1"
+  }
+}
